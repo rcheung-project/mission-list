@@ -1,0 +1,110 @@
+body {
+    margin: 10px auto;
+    min-width: 250px;
+    max-width: 50%;
+    background-color: lavenderblush
+  }
+* {
+  box-sizing: border-box;
+}
+.mList {
+  margin: 1px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  font-size: 16px;
+  background: #eee;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 8px 10px 40px;
+  list-style-type: none;
+  transition: 0.3s;  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: teal;
+  text-decoration: line-through;
+  transition-duration: 0.5s;
+}
+ul li:before {
+  content: '\1F4A1';
+  display: inline-block;
+  color: rgb(255, 238, 0);
+  padding: 0 6px 0 0;
+  transform: rotate(20deg);
+}
+.remove {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 16px 10px 16px;
+}
+.remove:hover {
+  background-color: rgb(245, 145, 13);
+  color: white;
+}
+.header {
+  background-color: rgb(27, 188, 216);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 15px;
+}
+.addBtn {
+  padding: 10px;
+  width: 15%;
+  background: #40c23cf1;
+  color: rgb(198, 233, 240);
+  float: left;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addBtn:hover {
+  background-color: rgb(7, 117, 136);
+}
+.mComplete {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: medium;
+  padding: 3px 3px 3px 8px;
+  background-color: rgba(56, 7, 136, 0.836);
+  color: white;
+}
+.emptyBtn {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: small;
+  padding: 8px;
+  border-radius: 2px;
+  background-color: rgb(7, 117, 136);
+  color: white;
+}
+.emptyBtn:hover{
+  background-color: rgb(245, 145, 13);
+  color: white;
+}
